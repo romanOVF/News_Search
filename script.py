@@ -11,4 +11,4 @@ bs_obj = bs(html, 'lxml')
 texts = bs_obj.find('ul', class_ = 'newslist').find_all('h3')
 
 for i in texts:
-    print(i.text)
+    print(i.text, end = '')
